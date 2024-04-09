@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+    </style>
+    
+    <title>Document</title>
+</head>
+<body>
+    <H1>Introdução ao CSS</H1>
+
+    <br>
+    
+    <h2>Sintaxe</h2>
+    <p>a regra é composta pelo <b>seletor</b> e suas <b>declarações</b>, e deve ser sempre escrita nesse formato:</p>
+    <br>
+    <p><strong><em>seletor{ propriedade: valor; }</em></strong></p>
+    <br>
+    <p>por exemplo, para alterar a cor do header desse documento, utilizou-se a seguinte regra no header dessa pagina: <br>
+        <br> h1{
+            <br> color: red; 
+            <br> font-size:16px;
+            <br>}
+    </p>
+
+    <h2>Formas de incluir CSS na página HTML</h2>
+    <ul>
+        <li style="color: blue;">É possivel mudar o estilo de um paragrafo utilizando css inline incluindo um atributo "style" na abertura da tag p ou li nesse caso</li>
+    <br>
+    <li>é possivel incluir internamente com a tag <b>style</b> dentro do head do HTML onde o estilo afeta o dicumento todo</li> 
+    <br>
+    <li>Entretanto, na maior parte das vezes, o CSS é escrito em um arquivo externo e vinculado às páginas HTML </li>
+    </ul>
+    
+    <br>
+    
+    <h2>Selecionando itens no CSS</h2>
+    <p>para seleciona quais itens receberam o estilo definido pela regra basta colocar o nome dele no seletor da regra, por exemplo:
+        <br>para selecionar todos os  <b>p</b> de uma pagina HTML e colocar a cor deles em roxo, basta a seguinte regra CSS: 
+        <br>
+        <br> <b><i>p{color:"purple";}</i></b>
+        <br>
+    </p>
+    <p>Também é possivel utilizar classes com nome customizado para alterar o eastilo de somente um paragrafo por exemplo. Para isso utiliza-se o atributo <b>class</b>, quando abrindo a tag p</p>
+
+    <p class="classe1">Por exemplo, nesse paragrafo a cor está diferente porque esse paragrafo segue uma classe diferente dos demais paragrafos dessa pagina, e no CSS há uma regra assim 
+        <br>
+        <br><b><i>.classe1 {color:"red"}</i></b>
+        <br>
+    </p>
+
+    <p id="id1">Além da classe, é possível identificar um elemnto utilizando o atributo <b>id</b> quando se abre a tag p:
+        <br>
+        <br><b><i>#id1{color:"orange"}</i></b>
+        <br>
+    </p>
+
+    <p>Sempre que uma regra CSS utiliza o <b>#</b> ela está se referindo a um id.</p>
+
+    <h3>Quando utilizar id e queando utilizar classes?</h3>
+    <p>Ids são únicos por página, então devem ser utilizados quando tratando de <b>um elemento em particular</b>. <br>
+    Já as classes podem ser aplicadas à <b>mais de um elemento.</b></p>
+
+</body>
+</html>
